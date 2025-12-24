@@ -1,18 +1,24 @@
-# Iqbal Lahori University Website
+# Iqbal University Website
 
-This repository contains the frontend project for the **Iqbal Lahori University, Mashhad** website. The project is built using HTML, CSS, and JavaScript and aims to provide a modern and responsive user interface for the university's official site.
+Welcome to the **Iqbal University Website** repository!  
+This project contains the frontend code for the official website of **Iqbal Lahori University, Mashhad**.
 
-## Features
+## 🧾 Description
 
-- Responsive design compatible with desktop, tablet, and mobile devices
-- Clean and organized structure for easy maintenance
-- Navigation menu for quick access to different sections
-- Sections for news, events, and academic information
+This is the frontend portion of the university website built using **HTML, CSS, and JavaScript**.  
+The goal of this project is to create a clean, responsive, and user‑friendly website that displays important information about the university (news, departments, events, etc.).
 
-## Installation
+## 🚀 Features
 
-To run this project locally:
+- 📱 Fully responsive layout (desktop, tablet, mobile)
+- 🧠 Easy‑to‑read structure
+- 📄 Multiple pages (Home, About, Departments, Contact, etc.)
+- 🔗 Navigation bar for quick access
 
-1. Clone the repository:
-```bash
-git clone https://github.com/reza-frontend/Iqbal-University.git
+## 📁 Getting Started
+
+To view or work on the project locally:
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/reza-frontend/Iqbal-University.git
