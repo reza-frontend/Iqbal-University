@@ -1,0 +1,798 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/app.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/response.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <title>موسسه اموزشی اقبال لاهوری</title>
+</head>
+<body>
+
+<!--All Svgs-->
+<svg class="svgs">
+    <symbol id="logo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path>
+        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+    </symbol>
+    <symbol id="search" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+    </symbol>
+    <symbol id="arrow-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+    </symbol>
+    <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+    </symbol>
+    <symbol id="users" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+        <circle cx="9" cy="7" r="4"></circle>
+        <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+    </symbol>
+    <symbol id="book" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 7v14"></path>
+        <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"></path>
+    </symbol>
+    <symbol id="medal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path>
+        <circle cx="12" cy="8" r="6"></circle>
+    </symbol>
+    <symbol id="logo-education" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path>
+        <path d="M22 10v6"></path>
+        <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+    </symbol>
+    <symbol id="article" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+        <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+        <path d="M10 9H8"></path>
+        <path d="M16 13H8"></path>
+        <path d="M16 17H8"></path>
+    </symbol>
+    <symbol id="library" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="m16 6 4 14"></path>
+        <path d="M12 6v14"></path>
+        <path d="M8 8v12"></path>
+        <path d="M4 4v16"></path>
+    </symbol>
+    <symbol id="email" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+    </symbol>
+    <symbol id="calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8 2v4"></path>
+        <path d="M16 2v4"></path>
+        <rect width="18" height="18" x="3" y="4" rx="2"></rect>
+        <path d="M3 10h18"></path>
+    </symbol>
+    <symbol id="laptop" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 16V7a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v9m16 0H4m16 0 1.28 2.55a1 1 0 0 1-.9 1.45H3.62a1 1 0 0 1-.9-1.45L4 16"></path>
+    </symbol>
+    <symbol id="calendar2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5" />
+    </symbol>
+    <symbol id="cpu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+        <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+        <path d="M15 2v2"></path>
+        <path d="M15 20v2"></path>
+        <path d="M2 15h2"></path>
+        <path d="M2 9h2"></path>
+        <path d="M20 15h2"></path>
+        <path d="M20 9h2"></path>
+        <path d="M9 2v2"></path>
+        <path d="M9 20v2"></path>
+    </symbol>
+    <symbol id="calculator" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
+    </symbol>
+    <symbol id="globe-alt" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+    </symbol>
+    <symbol id="instagram" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+    </symbol>
+    <symbol id="twitter" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+    </symbol>
+    <symbol id="linkedin" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+        <rect width="4" height="12" x="2" y="9"></rect>
+        <circle cx="4" cy="4" r="2"></circle>
+    </symbol>
+    <symbol id="youtube" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+        <path d="m10 15 5-3-5-3z"></path>
+    </symbol>
+</svg>
+
+<!-- Start Header -->
+<header class="header">
+    <div class="container">
+        <section class="header__content">
+            <div class="header__logo">
+                <div class="header__logo-icon">
+                    <svg class="header-icon">
+                        <use href="#logo"></use>
+                    </svg>
+                </div>
+                <div class="header__logo-contents">
+                    <h1 class="header__logo-title">دانشگاه اقبال</h1>
+                    <span class="header__logo-caption">همگام با پیشرفت</span>
+                </div>
+            </div>
+            <nav class="header__nav">
+                <ul class="header__nav-menu">
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">صفحه اصلی</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">
+                            معرفی
+                            <svg class="header__nav-link-icon">
+                                <use href="#arrow-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">تاریخچه موسسه</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">هیات موسس</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">مدیران</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">
+                            رشته های تحصیلی
+                            <svg class="header__nav-link-icon">
+                                <use href="#arrow-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">دانشکده فنی و مهندسی،علوم پایه</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">دانشکده هنر،معماری‌</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">دانشکده مدیریت و علوم انسانی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">
+                            خدمات دانشجویی
+                            <svg class="header__nav-link-icon">
+                                <use href="#arrow-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">اطلاعیه های ثبت نام</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">رشته ها و مقاطع تحصیلی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">مشاهده لیست شهریه مقاطع مختلف</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">تقویم آموزشی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">تحصیلات تکمیلی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">خوابگاه دانشجویی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">وام دانشجویی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">فرم‌های دانشجویی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">بسیج دانشجویی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">پرسش‌های متداول</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">نظرات و پیشنهادات</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">
+                            سامانه ها
+                            <svg class="header__nav-link-icon">
+                                <use href="#arrow-down"></use>
+                            </svg>
+                        </a>
+                        <ul class="header__submenu">
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">پرتال آموزشی</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">اتوماسیون اداری</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">پست الکترونیک</a>
+                            </li>
+                            <li class="header__submenu-item">
+                                <a href="#" class="header__submenu-link">آموزش مجازی</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="header__nav-item">
+                        <a class="header__nav-link" href="#">تماس با ما</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__link">
+                <button class="header__btn-search">
+                    <svg class="header__btn-search-icon">
+                        <use href="#search"></use>
+                    </svg>
+                </button>
+                <a class="header__link-panel" href="#">پرتال دانشجویی</a>
+            </div>
+        </section>
+    </div>
+</header>
+<!-- Finish Header -->
+
+<!-- Start Main -->
+<main class="main">
+    <section class="main__header">
+        <div class="container">
+            <div class="header__main">
+                <div class="header__main-content" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="header__main-info">
+                        <h1 class="header__main-title">دانشگاه اقبال</h1>
+                        <h2 class="header__main-caption">همگام با پیشرفت، همراه تا موفقیت</h2>
+                    </div>
+                    <div class="header__main-links">
+                        <a href="#" class="header__main-link header__main-link--info">
+                            درباره دانشگاه
+                            <svg class="header__main-icon">
+                                <use href="#arrow-left"></use>
+                            </svg>
+                        </a>
+                        <a href="#" class="header__main-link header__main-link--register">راهنمای ثبت نام</a>
+                    </div>
+                </div>
+                <div class="header__main-services">
+                    <div class="header__service" data-aos="fade-up" data-aos-delay="100">
+                        <div class="header__service-logo">
+                            <svg class="header__service-logo-icon">
+                                <use href="#users"></use>
+                            </svg>
+                        </div>
+                        <div class="header__service-content">
+                            <h3 class="header__service-title counter-number" data-count="15000">۲۶۰۰+</h3>
+                            <span class="header__service-caption">دانشجوی فعال</span>
+                        </div>
+                    </div>
+                    <div class="header__service" data-aos="fade-up" data-aos-delay="200">
+                        <div class="header__service-logo header__service-logo--book">
+                            <svg class="header__service-logo-icon header__service-logo-icon-book">
+                                <use href="#book"></use>
+                            </svg>
+                        </div>
+                        <div class="header__service-content">
+                            <h3 class="header__service-title counter-number" data-count="120">۳۲+</h3>
+                            <span class="header__service-caption">رشته تحصیلی</span>
+                        </div>
+                    </div>
+                    <div class="header__service" data-aos="fade-up" data-aos-delay="300">
+                        <div class="header__service-logo">
+                            <svg class="header__service-logo-icon">
+                                <use href="#medal"></use>
+                            </svg>
+                        </div>
+                        <div class="header__service-content">
+                            <h3 class="header__service-title counter-number" data-count="30">۱۹+</h3>
+                            <span class="header__service-caption">سال سابقه</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main__services">
+        <div class="container">
+            <div class="main__services-content" data-aos="fade-up">
+                <h3 class="main__services-title">دسترسی سریع</h3>
+                <span class="main__services-caption">به سامانه‌های دانشگاه دسترسی داشته باشید</span>
+            </div>
+            <div class="main__services-item">
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="main__item-logo">
+                        <svg class="main__item-logo-icon">
+                            <use href="#logo-education"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">پرتال پویا</p>
+                </a>
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="main__item-logo main__item-logo--active">
+                        <svg class="main__item-logo-icon main__item-logo-icon--active">
+                            <use href="#article"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">ثبت‌نام الکترونیک</p>
+                </a>
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="main__item-logo">
+                        <svg class="main__item-logo-icon">
+                            <use href="#library"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">کتابخانه دیجیتال</p>
+                </a>
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="main__item-logo main__item-logo--active">
+                        <svg class="main__item-logo-icon main__item-logo-icon--active">
+                            <use href="#email"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">پست الکترونیک</p>
+                </a>
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="main__item-logo">
+                        <svg class="main__item-logo-icon">
+                            <use href="#calendar"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">تقویم آموزشی</p>
+                </a>
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="main__item-logo main__item-logo--active">
+                        <svg class="main__item-logo-icon main__item-logo-icon--active">
+                            <use href="#users"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">اتوماسیون اداری</p>
+                </a>
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="main__item-logo">
+                        <svg class="main__item-logo-icon">
+                            <use href="#book"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">سیستم تغذیه</p>
+                </a>
+                <a href="#" class="main__item-link" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="main__item-logo main__item-logo--active">
+                        <svg class="main__item-logo-icon main__item-logo-icon--active">
+                            <use href="#laptop"></use>
+                        </svg>
+                    </div>
+                    <p class="main__item-text">آموزش مجازی</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="articles">
+        <div class="container">
+            <div class="articles__head" data-aos="fade-up">
+                <div class="articles__head-content">
+                    <h2 class="articles__head-title">اخبار و اطلاعیه‌ها</h2>
+                    <h3 class="articles__head-caption">آخرین رویدادها و اطلاعیه‌های دانشگاه</h3>
+                </div>
+                <a href="#" class="articles__head-link">
+                    مشاهده همه
+                    <svg class="header__main-icon">
+                        <use href="#arrow-left"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="articles__main">
+                <div class="articles__boxes">
+                    <div class="articles__box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="articles__box-head">
+                            <img src="images/image-article1.jpg" alt="article" class="articles__box-img">
+                        </div>
+                        <div class="articles__box-content">
+                            <h2 class="articles__box-title">هفته پژوهش و فناوری</h2>
+                            <span class="articles__box-caption">برگزاری مراسم تقدیر از پژوهشگران برتر دانشگاه در هفته پژوهش و فناوری</span>
+                        </div>
+                        <div class="articles__box-date">
+                            <svg class="articles__box-date-icon">
+                                <use href="#calendar2"></use>
+                            </svg>
+                            <span class="articles__box-date-text">۱۵ آذر ۱۴۰۳</span>
+                        </div>
+                    </div>
+                    <div class="articles__box" data-aos="fade-up" data-aos-delay="200">
+                        <div class="articles__box-head">
+                            <img src="images/image-article2.jpg" alt="article" class="articles__box-img">
+                        </div>
+                        <div class="articles__box-content">
+                            <h2 class="articles__box-title">ثبت‌نام ترم جدید آغاز شد</h2>
+                            <span class="articles__box-caption">ثبت‌نام دانشجویان برای نیمسال دوم تحصیلی از امروز آغاز می‌شود</span>
+                        </div>
+                        <div class="articles__box-date">
+                            <svg class="articles__box-date-icon">
+                                <use href="#calendar2"></use>
+                            </svg>
+                            <span class="articles__box-date-text">۱۲ آذر ۱۴۰۳</span>
+                        </div>
+                    </div>
+                    <div class="articles__box" data-aos="fade-up" data-aos-delay="300">
+                        <div class="articles__box-head">
+                            <img src="images/image-article3.jpg" alt="article" class="articles__box-img">
+                        </div>
+                        <div class="articles__box-content">
+                            <h2 class="articles__box-title">افتتاح آزمایشگاه جدید</h2>
+                            <span class="articles__box-caption">آزمایشگاه تحقیقاتی هوش مصنوعی و یادگیری ماشین با حضور مسئولین افتتاح شد</span>
+                        </div>
+                        <div class="articles__box-date">
+                            <svg class="articles__box-date-icon">
+                                <use href="#calendar2"></use>
+                            </svg>
+                            <span class="articles__box-date-text">۱۰ آذر ۱۴۰۳</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="articles__news" data-aos="fade-right" data-aos-delay="100">
+                    <div class="articles__news-title">اطلاعیه ها</div>
+                    <div class="articles__news-details">
+                        <div class="articles__news-detail">
+                            <h4 class="articles__news-detail-title">اطلاعیه انتخاب واحد نیمسال دوم</h4>
+                            <div class="articles__news-detail-date">
+                                <svg class="articles__news-detail-icon">
+                                    <use href="#calendar2"></use>
+                                </svg>
+                                <span class="articles__news-detail-text">۱۰ آذر ۱۴۰۳</span>
+                            </div>
+                        </div>
+                        <div class="articles__news-detail">
+                            <h4 class="articles__news-detail-title">برنامه امتحانات پایان ترم</h4>
+                            <div class="articles__news-detail-date">
+                                <svg class="articles__news-detail-icon">
+                                    <use href="#calendar2"></use>
+                                </svg>
+                                <span class="articles__news-detail-text">۱۳ آذر ۱۴۰۳</span>
+                            </div>
+                        </div>
+                        <div class="articles__news-detail">
+                            <h4 class="articles__news-detail-title">تمدید مهلت ثبت‌نام وام دانشجویی</h4>
+                            <div class="articles__news-detail-date">
+                                <svg class="articles__news-detail-icon">
+                                    <use href="#calendar2"></use>
+                                </svg>
+                                <span class="articles__news-detail-text">۱۱ آذر ۱۴۰۳</span>
+                            </div>
+                        </div>
+                        <div class="articles__news-detail">
+                            <h4 class="articles__news-detail-title">همایش علمی بین‌المللی</h4>
+                            <div class="articles__news-detail-date">
+                                <svg class="articles__news-detail-icon">
+                                    <use href="#calendar2"></use>
+                                </svg>
+                                <span class="articles__news-detail-text">۹ آذر ۱۴۰۳</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="university">
+        <div class="container">
+            <div class="university__grid">
+                <div class="university__content" data-aos="fade-up">
+                    <h2 class="university__title">زندگی در دانشگاه</h2>
+                    <p class="university__caption">
+                        محیطی پویا برای یادگیری، پژوهش و رشد شخصی
+                    </p>
+                </div>
+                <div class="university__media">
+                    <a href="#" class="university__item university__item--large" data-aos="fade-up" data-aos-delay="100">
+                        <img src="images/life-in-university1.jpg" alt="محیط دانشگاه">
+                        <div class="university__overlay">
+                            <h3>محیط دانشگاه</h3>
+                            <span>مشاهده گالری</span>
+                        </div>
+                    </a>
+                    <a href="#" class="university__item" data-aos="fade-up" data-aos-delay="150">
+                        <img src="images/life-in-university2.jpg" alt="کتابخانه مرکزی">
+                        <div class="university__overlay">
+                            <h3>کتابخانه مرکزی</h3>
+                            <span>مشاهده گالری</span>
+                        </div>
+                    </a>
+                    <a href="#" class="university__item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="images/life-in-university3.jpg" alt="آزمایشگاه‌ها">
+                        <div class="university__overlay">
+                            <h3>آزمایشگاه‌ها</h3>
+                            <span>مشاهده گالری</span>
+                        </div>
+                    </a>
+                    <a href="#" class="university__item" data-aos="fade-up" data-aos-delay="250">
+                        <img src="images/life-in-university4.jpg" alt="کارگاه‌های عملی">
+                        <div class="university__overlay">
+                            <h3>کارگاه‌های عملی</h3>
+                            <span>مشاهده گالری</span>
+                        </div>
+                    </a>
+                    <a href="#" class="university__item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="images/life-in-university5.jpg" alt="سالن ورزشی">
+                        <div class="university__overlay">
+                            <h3>سالن ورزشی</h3>
+                            <span>مشاهده گالری</span>
+                        </div>
+                    </a>
+                    <a href="#" class="university__item" data-aos="fade-up" data-aos-delay="350">
+                        <img src="images/life-in-university6.jpg" alt="فضای سبز">
+                        <div class="university__overlay">
+                            <h3>فضای سبز</h3>
+                            <span>مشاهده گالری</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="faculties">
+        <div class="container">
+            <div class="faculties__head" data-aos="fade-up">
+                <h2 class="faculties__title">دانشکده‌ها</h2>
+                <p class="faculties__caption">
+                    با بیش از ۱۲۰ رشته تحصیلی در مقاطع کاردانی تا دکتری، آینده خود را بسازید
+                </p>
+            </div>
+
+            <div class="faculties__grid">
+                <div class="faculty" data-aos="flip-left" data-aos-delay="100">
+                    <div class="faculty__icon faculty__icon--accent">
+                        <svg class="faculty__icon-this">
+                            <use href="#cpu"></use>
+                        </svg>
+                    </div>
+                    <div class="faculty__content">
+                        <h3 class="faculty__title">فنی و مهندسی</h3>
+                        <p class="faculty__text">مهندسی کامپیوتر، برق، مکانیک و عمران</p>
+                    </div>
+                </div>
+                <div class="faculty faculty--gold" data-aos="flip-left" data-aos-delay="150">
+                    <div class="faculty__icon faculty__icon--gold">
+                        <svg class="faculty__icon-this">
+                            <use href="#cpu"></use>
+                        </svg>
+                    </div>
+                    <div class="faculty__content">
+                        <h3 class="faculty__title">فنی و مهندسی</h3>
+                        <p class="faculty__text">مهندسی کامپیوتر، برق، مکانیک و عمران</p>
+                    </div>
+                </div>
+                <div class="faculty" data-aos="flip-left" data-aos-delay="200">
+                    <div class="faculty__icon faculty__icon--accent">
+                        <svg class="faculty__icon-this">
+                            <use href="#cpu"></use>
+                        </svg>
+                    </div>
+                    <div class="faculty__content">
+                        <h3 class="faculty__title">فنی و مهندسی</h3>
+                        <p class="faculty__text">مهندسی کامپیوتر، برق، مکانیک و عمران</p>
+                    </div>
+                </div>
+                <div class="faculty faculty--gold" data-aos="flip-left" data-aos-delay="250">
+                    <div class="faculty__icon faculty__icon--gold">
+                        <svg class="faculty__icon-this">
+                            <use href="#cpu"></use>
+                        </svg>
+                    </div>
+                    <div class="faculty__content">
+                        <h3 class="faculty__title">فنی و مهندسی</h3>
+                        <p class="faculty__text">مهندسی کامپیوتر، برق، مکانیک و عمران</p>
+                    </div>
+                </div>
+                <div class="faculty" data-aos="flip-left" data-aos-delay="300">
+                    <div class="faculty__icon faculty__icon--accent">
+                        <svg class="faculty__icon-this">
+                            <use href="#cpu"></use>
+                        </svg>
+                    </div>
+                    <div class="faculty__content">
+                        <h3 class="faculty__title">فنی و مهندسی</h3>
+                        <p class="faculty__text">مهندسی کامپیوتر، برق، مکانیک و عمران</p>
+                    </div>
+                </div>
+                <div class="faculty faculty--gold" data-aos="flip-left" data-aos-delay="350">
+                    <div class="faculty__icon faculty__icon--gold">
+                        <svg class="faculty__icon-this">
+                            <use href="#cpu"></use>
+                        </svg>
+                    </div>
+                    <div class="faculty__content">
+                        <h3 class="faculty__title">فنی و مهندسی</h3>
+                        <p class="faculty__text">مهندسی کامپیوتر، برق، مکانیک و عمران</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="activity">
+        <div class="container">
+            <div class="activity__header" data-aos="fade-up">
+                <h2>دانشگاه در یک نگاه</h2>
+                <p>آمار و ارقام دانشگاه نمونه در سال تحصیلی ۱۴۰۳-۱۴۰۲</p>
+            </div>
+            <div class="activity__grid">
+                <div class="activity__card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="activity__icon">
+                        <svg class="activity__icon-main">
+                            <use href="#users"></use>
+                        </svg>
+                    </div>
+                    <p class="activity__number counter-number" data-count="15000">۲۶۰۰+</p>
+                    <p class="activity__label">دانشجوی فعال</p>
+                </div>
+                <div class="activity__card" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="activity__icon">
+                        <svg class="activity__icon-main">
+                            <use href="#logo-education"></use>
+                        </svg>
+                    </div>
+                    <p class="activity__number counter-number" data-count="50000">۹۰۰۰+</p>
+                    <p class="activity__label">فارغ‌التحصیل</p>
+                </div>
+                <div class="activity__card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="activity__icon">
+                        <svg class="activity__icon-main">
+                            <use href="#book"></use>
+                        </svg>
+                    </div>
+                    <p class="activity__number counter-number" data-count="120">۳۲+</p>
+                    <p class="activity__label">رشته تحصیلی</p>
+                </div>
+                <div class="activity__card" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="activity__icon">
+                        <svg class="activity__icon-main">
+                            <use href="#medal"></use>
+                        </svg>
+                    </div>
+                    <p class="activity__number counter-number" data-count="500">۳۵+</p>
+                    <p class="activity__label">عضو هیئت علمی</p>
+                </div>
+                <div class="activity__card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="activity__icon">
+                        <svg class="activity__icon-main">
+                            <use href="#calculator"></use>
+                        </svg>
+                    </div>
+                    <p class="activity__number counter-number" data-count="6">۱۳+</p>
+                    <p class="activity__label">گروه آموزشی</p>
+                </div>
+                <div class="activity__card" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="activity__icon">
+                        <svg class="activity__icon-main">
+                            <use href="#globe-alt"></use>
+                        </svg>
+                    </div>
+                    <p class="activity__number counter-number" data-count="30">۱۹+</p>
+                    <p class="activity__label">سال سابقه</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Finish Main -->
+
+<!-- Start Footer -->
+<footer class="footer">
+    <div class="container footer__top">
+        <div class="footer__grid">
+
+            <!-- about -->
+            <div class="footer__about">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <svg class="footer__logo-icon">
+                            <use href="#logo"></use>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>دانشگاه اقبال</h3>
+                        <p>همگام با پیشرفت</p>
+                    </div>
+                </div>
+
+                <ul class="footer__info">
+                    <li>تهران، خیابان ولیعصر، پلاک ۱۲۳</li>
+                    <li>۰۲۱-۱۲۳۴۵۶۷۸</li>
+                    <li>info@university.ac.ir</li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="#">
+                        <svg class="footer__socials-icon">
+                            <use href="#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="footer__socials-icon">
+                            <use href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="footer__socials-icon">
+                            <use href="#linkedin"></use>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg class="footer__socials-icon">
+                            <use href="#youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- links -->
+            <div class="footer__col">
+                <h4>دانشگاه</h4>
+                <a href="#">درباره دانشگاه</a>
+                <a href="#">تاریخچه</a>
+                <a href="#">هیئت امنا</a>
+                <a href="#">معاونت‌ها</a>
+            </div>
+
+            <div class="footer__col">
+                <h4>آموزش</h4>
+                <a href="#">دانشکده‌ها</a>
+                <a href="#">رشته‌ها</a>
+                <a href="#">تقویم آموزشی</a>
+                <a href="#">آیین‌نامه‌ها</a>
+            </div>
+
+            <div class="footer__col">
+                <h4>دانشجویان</h4>
+                <a href="#">پذیرش</a>
+                <a href="#">خدمات دانشجویی</a>
+                <a href="#">خوابگاه‌ها</a>
+                <a href="#">امور مالی</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="container footer__bottom-inner">
+            <p>© ۱۴۰۳ دانشگاه نمونه. تمامی حقوق محفوظ است.</p>
+            <div>
+                <a href="#">حریم خصوصی</a>
+                <a href="#">قوانین و مقررات</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Finish Footer -->
+
+<!-- AOS Library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="scripts/app.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+        easing: 'ease-in-out'
+    });
+</script>
+</body>
+</html>

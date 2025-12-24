@@ -1,0 +1,49 @@
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media (max-width: 1024px) {
+    .faculties__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 992px) {
+    .university__media {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .university__item--large {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 768px) {
+}
+@media (max-width: 640px) {
+    .faculties__grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 576px) {
+    .university__media {
+        grid-template-columns: 1fr;
+    }
+
+    .university__item--large {
+        grid-column: span 1;
+    }
+
+    .footer__grid {
+        grid-template-columns: 1fr;
+    }
+    .footer__bottom-inner {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+}
+@media screen and (max-width: 400px) {
+}
